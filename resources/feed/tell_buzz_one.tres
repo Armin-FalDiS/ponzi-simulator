@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 12
+tone = 3
+signal_kind = 1
+band = 0
+author_mask = 31
+min_mood = -0.35
+max_mood = 1.0
+engagement_scale = 1.0
+bodies = PackedStringArray("one person shared my post about this and it is doing numbers", "someone reposted this into a much bigger group than mine", "one of my mates asked me about it unprompted today. word travels", "a single comment on my post and now three people have messaged me", "one person outside the group has started asking about it", "somebody screenshotted my {weeks} in and put it somewhere I cannot see", "one share, and my notifications have not stopped since", "a guy at work brought it up and I never told him", "one person asked me to explain it to their brother, so I did", "somebody has put this in a forum I am not even a member of")

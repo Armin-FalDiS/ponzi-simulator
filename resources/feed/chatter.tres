@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 0
+tone = 0
+author_mask = 31
+min_mood = -0.35
+max_mood = 1.0
+engagement_scale = 0.5
+bodies = PackedStringArray("quiet week. no notes.", "anyone else just checking the app for no reason", "week {week} and still here 🙂", "told my brother about this. he laughed. we will see who laughs in a year", "reading the terms again over lunch. still holds up", "slow news week which is honestly the point", "if you know you know", "boring is good. boring is very good", "nothing to report and that is the report", "somebody in my group chat asked if this was real. I sent them the numbers", "week {week}. same as last week. love that for me", "not financial advice, just a guy who is having a nice year", "went to the office to say hello. very normal office. plants and everything", "my accountant asked what I was in. I said a fund. he said which one. I said a fund")

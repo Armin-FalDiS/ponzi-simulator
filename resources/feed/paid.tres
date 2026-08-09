@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 2
+tone = 1
+author_mask = 15
+min_mood = -0.2
+max_mood = 1.0
+engagement_scale = 0.9
+bodies = PackedStringArray("cleared. {amount}. like clockwork", "{amount} landed before I was even out of bed", "another one in the account. that is {weeks} running now", "payment day 🟢", "got mine. on the day. as always", "{amount} in. I have stopped checking whether it will arrive, which I think is the real return", "cleared at 9am. my old bank took three days to move my own money", "{weeks} in, every payment on the day, zero excuses", "and there it is. {amount}", "the cheque cleared. that is the whole post", "paid again. I keep waiting for the catch and it keeps not arriving", "{amount}. straight to the joint account, straight to being told off for the last thing I bought", "on time. every time. {weeks} and counting", "money in. going back to work now, for some reason")

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 8
+tone = 4
+author_mask = 96
+min_mood = -1.0
+max_mood = 0.3
+engagement_scale = 3.0
+bodies = PackedStringArray("🧵 a thread on the numbers here. they do not work. 1/", "spent the weekend with the filings for this fund. there are no filings for this fund", "reached out for comment. no response as of week {week}", "🧵 how do you pay {week} straight weeks of identical returns in a market that did what it did? 1/14", "working on a piece about this. if you are an investor, my DMs are open and I will keep you anonymous", "sources tell me the regulator has opened a file. that is not a raid. it is a file", "asked three fund managers to explain this to me. all three used the word impossible", "I have a copy of the audit. the firm that signed it does not appear on the register", "this is the fourth reader who has emailed me about the same fund this month", "🧵 I want to be careful here, because people have real money in this. 1/", "the paperwork investors are shown is one page long. one page.", "filed a records request about this two weeks ago. it came back faster than I expected", "no allegation, just an observation: the returns and the recruitment curve are the same curve", "if this is legitimate it is the easiest correction I will ever run")

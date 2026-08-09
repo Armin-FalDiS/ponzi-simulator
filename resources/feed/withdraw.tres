@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 6
+tone = 2
+author_mask = 15
+min_mood = -1.0
+max_mood = 0.5
+engagement_scale = 2.0
+bodies = PackedStringArray("taking mine out. no drama, no accusation. just want it in my own bank", "cashed out today. paid within the hour, to be fair to them", "pulled the {amount} back. buying a house, that is all", "out. I have had a good run and I am not greedy", "requested a full withdrawal this morning. will report back on how long it takes", "{count} people I know have withdrawn this month. that is not nothing", "closed my position. thanks for everything, genuinely", "getting mine out while getting mine out is still a sentence people say lightly", "took half out and left half in. call it insurance", "withdrawn. no hard feelings. I just do not understand where the money comes from and that started to bother me", "asked for it back and it came back. that is the test and it passed", "out at week {week}. good luck everyone, sincerely", "my wife made me. she has been right before", "cashing out. if I am wrong I will post about being wrong")

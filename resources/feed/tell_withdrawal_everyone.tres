@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 12
+tone = 4
+signal_kind = 0
+band = 2
+author_mask = 79
+min_mood = -1.0
+max_mood = 0.55
+engagement_scale = 3.4
+bodies = PackedStringArray("everyone is talking about pulling out. the whole chat, all day", "the group chat is nothing but withdrawal questions now", "everyone I know in this is asking the same thing: how do I get my money", "all anyone is talking about is cashing out. nobody is talking about anything else", "every single message today has been about withdrawals", "it has gone from nobody asking to everybody asking in about a week", "the whole group is queueing up for the exit. I am not being dramatic", "everyone wants out. I have not seen one person say they are staying", "the entire thread is people working out how fast they can get their money back", "everybody is asking about withdrawals and nobody is getting an answer")

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 12
+tone = 3
+signal_kind = 1
+band = 1
+author_mask = 31
+min_mood = -0.35
+max_mood = 1.0
+engagement_scale = 1.9
+bodies = PackedStringArray("a few people are asking me about this now. it is spreading", "three separate people this week wanted the details. three", "a handful of shares and suddenly everybody has a cousin who knows", "some of my old work lot are asking how to get in", "a few people I have not spoken to in years have messaged me about this", "getting a few is-this-the-thing-you-mentioned messages", "two or three people have asked me to send them the details", "a few of the group have started posting about it publicly and it is landing", "some new faces in the comments asking sensible questions", "a handful of people outside the circle are onto it now")

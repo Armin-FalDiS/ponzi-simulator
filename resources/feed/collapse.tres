@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 11
+tone = 5
+author_mask = 15
+min_mood = -1.0
+max_mood = 1.0
+engagement_scale = 6.0
+bodies = PackedStringArray("the office is empty. I drove there. it is empty.", "phone disconnected. website down. week {week}.", "solicitors are organising a group. link below. do not sign anything alone", "everyone who told me I was being paranoid, I am not enjoying this", "there is a police notice on the door. an actual printed notice on the actual door", "we have a group of {count} so far. if you are in, come in, do not sit at home with it", "I want to say something clever and I have got nothing", "my mother is in this. my mother is in this.", "the money is gone. saying it plainly because everyone else is being careful with words", "please do not blame the people who brought you in. they were brought in too", "week {week}. that is where it stopped.")

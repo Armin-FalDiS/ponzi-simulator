@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 1
+tone = 1
+author_mask = 15
+min_mood = -0.1
+max_mood = 1.0
+engagement_scale = 1.0
+bodies = PackedStringArray("wired {amount} this morning. hands were shaking a bit, not going to lie", "in. finally. {amount} of savings that were doing nothing in a current account", "signed the paperwork today. it is one page. I like that", "okay I am doing it. {amount}. tell me I am not being an idiot", "put in {amount}. my wife does not know yet. she will know when the first one lands", "three of us signed up out of the same office this week. we compared paperwork, it is all the same", "day one for me. {amount} in. see you at the top", "sold the motorbike. put the {amount} here instead. the motorbike was going to kill me anyway", "joined after six months of watching from the outside. should have gone in six months ago", "in for {amount}. small, to start. we will see", "my cousin has been on at me since spring. fine. {amount}. happy now?", "{count} new people this week apparently. the room is filling up", "did the thing. {amount}. genuinely nervous, genuinely excited", "the pension was returning nothing. nothing. so, {amount}, here instead")

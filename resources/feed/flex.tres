@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 3
+tone = 3
+author_mask = 11
+min_mood = 0.3
+max_mood = 1.0
+engagement_scale = 2.6
+bodies = PackedStringArray("bought {item}. paid for entirely by money I did not work for 😎", "{item}. because the payments keep coming and I keep not needing them", "this is what {weeks} of getting paid on time looks like → {item}", "handed in my notice today. the fund pays better than the job did", "{item} 🔑 no debt, no finance, no payment plan. just cleared funds", "took the family away for a week. did not look at the price of anything once", "my mother in law asked how. I showed her the statements. she is in now too", "{item}. six months ago I was moving money around to cover the gas bill", "if you are still on the fence, this is week {week} for me and I have {item} in the drive", "not showing off. showing receipts. {item}", "we paid off the house. at week {week}. the house.", "{item} and I still have not touched the principal 🤷", "DM me if you want the intro. no pressure. it is just sitting there", "upgraded everything this month. the money keeps arriving and I keep running out of things to fix")

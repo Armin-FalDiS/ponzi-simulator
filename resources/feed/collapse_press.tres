@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 11
+tone = 5
+author_mask = 96
+min_mood = -1.0
+max_mood = 1.0
+engagement_scale = 5.0
+bodies = PackedStringArray("🧵 what happened here, as far as anyone can reconstruct it. 1/", "it collapsed at week {week}. I have been asking about it since long before that", "for the record: I asked them to comment four times. this is the fifth", "if you lost money here, keep every document. every one. the group action will need them", "I take no pleasure in this. I have {count} emails in my inbox from people who did not see it coming", "the arithmetic was public the whole time. that is the part that will not sit right", "🧵 the returns and the recruitment curve were the same curve. here is the chart. 1/", "the office lease was in a different name. of course it was", "week {week}. every single one of these ends at a week {week}", "told you does not help anybody. so: what now, and who is liable")

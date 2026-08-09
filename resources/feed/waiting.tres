@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 4
+tone = 0
+author_mask = 15
+min_mood = -0.8
+max_mood = 0.6
+engagement_scale = 1.4
+bodies = PackedStringArray("anyone else still waiting on this week's payment? probably just my bank", "mine has not landed yet. not worried. just checking I am not the only one", "is it normal for it to come a day late? first time for me", "{amount} outstanding and no email. presumably a processing thing", "rang the office. very nice on the phone. said it is in hand", "not panicking. asking.", "second time this month it has been slow. anyone?", "did everyone get theirs? asking for a friend, the friend is me", "still nothing. going to give it until Friday before I make a fuss", "the app says paid. the account says otherwise", "somebody in the group chat said theirs was late too. so at least it is not personal", "waiting. patiently. mostly.", "I do not want to be the guy who posts about this. and yet here I am", "late again. I have been very reasonable about this so far")

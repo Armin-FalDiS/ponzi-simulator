@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 7
+tone = 4
+author_mask = 79
+min_mood = -1.0
+max_mood = 0.2
+engagement_scale = 1.8
+bodies = PackedStringArray("genuine question and I am not being funny: where does the yield actually come from", "has anybody here ever met the person who manages the trades", "the returns have not moved in {weeks}. markets have. that is odd, no?", "I asked for an audit report. I got a PDF with no auditor named on it", "not saying it is a scam. saying I would like one boring answer to one boring question", "the more I look at the paperwork the less there is of it", "does anyone actually know what the strategy is. in words. one sentence", "reposting my question from last week since it went unanswered", "every explanation I get is about how much I have made, not about how", "a friend in compliance looked at this and went very quiet", "why is the return the same every single week. nothing is the same every single week", "the office address is a serviced building. I checked. that is not damning, it is just not nothing", "I want to be wrong about this. I would love to be wrong about this", "started reading about a thing called a Ponzi scheme last night. no reason")

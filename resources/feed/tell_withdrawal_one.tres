@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 12
+tone = 4
+signal_kind = 0
+band = 0
+author_mask = 79
+min_mood = -1.0
+max_mood = 0.55
+engagement_scale = 1.2
+bodies = PackedStringArray("one person in the group chat says they are putting in for a withdrawal. probably nothing", "someone I know is asking how long a cash-out actually takes. first time I have heard that question", "one of the lads wants his money back out. said it is for a house thing", "quiet question from one person about whether you can exit early. no idea myself", "a single post asking about the withdrawal form, and it got no replies", "one guy is out, apparently. would not say why", "somebody asked me privately if I had ever taken money back out. I said I had not needed to", "one person mentioned they are thinking about pulling theirs. one person is not a trend", "heard one withdrawal request went in this week. that happens", "there is one name I have not seen post in a while, and now they want out")

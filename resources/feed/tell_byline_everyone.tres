@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 12
+tone = 4
+signal_kind = 2
+band = 2
+author_mask = 127
+min_mood = -1.0
+max_mood = 1.0
+engagement_scale = 4.2
+bodies = PackedStringArray("everyone with a byline is asking about this now", "the whole financial press seems to have found us at once", "every journalist in the country has apparently emailed somebody in this group", "all anyone in the media is asking is who is behind it", "every publication I have heard of is on this. every one", "the press are everywhere. I have had four calls today", "everyone is getting press enquiries. compare notes if you like", "it is all over the financial press and it is not flattering", "every reporter is suddenly an expert on us", "the entire press pack has arrived. something is coming")

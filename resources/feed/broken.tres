@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 5
+tone = 5
+author_mask = 79
+min_mood = -1.0
+max_mood = 0.35
+engagement_scale = 3.4
+bodies = PackedStringArray("so we are just not getting paid this week. that is the email. that is the whole email", "a PROCESSING DELAY. {amount} of my money is a processing delay", "got half. HALF. and an apology I did not ask for", "I have {amount} outstanding and a form letter that does not use the word sorry", "everyone check your accounts. right now. tell me what you see", "they have had my money for {weeks} and today they discovered a technical issue", "partial payment received. partial. I did not sign a partial contract", "I put my redundancy money into this", "please can somebody from the office actually answer a phone", "screenshot the email before it gets edited. I have already done it", "this is the second one. the second one. there is no third one", "my sister is in this too and I am the one who put her in it 🙃", "{amount}. that is what is missing. saying it out loud so it exists somewhere", "delayed, apparently. by whom. by what. delayed by whom")

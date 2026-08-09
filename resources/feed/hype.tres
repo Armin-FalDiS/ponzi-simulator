@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 9
+tone = 3
+author_mask = 23
+min_mood = 0.0
+max_mood = 1.0
+engagement_scale = 2.2
+bodies = PackedStringArray("went to the seminar last night. room was full. actual full, not press-release full", "the webinar was better than my MBA and about {amount} cheaper", "#ad — I have been in this fund {weeks} now and I do not say that lightly", "watched the whole thing twice. sending it to my dad", "they ran the session again because the first one sold out", "genuinely the clearest explanation of anything financial I have ever sat through", "podcast episode on this dropped today. worth an hour of your life", "queue outside the venue was round the corner. for a finance talk. in this economy", "no hard sell at all which is exactly why I signed", "brought two colleagues to the seminar. both of them signed before the coffee break", "the Q and A ran an extra forty minutes because nobody wanted to leave", "if you missed it they are doing another one next month. do not miss it twice", "the slides are public. that alone puts them ahead of every fund I have dealt with", "went in a sceptic. came out with a pen in my hand")

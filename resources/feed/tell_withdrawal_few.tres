@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 12
+tone = 4
+signal_kind = 0
+band = 1
+author_mask = 79
+min_mood = -1.0
+max_mood = 0.55
+engagement_scale = 2.2
+bodies = PackedStringArray("a few people are asking how withdrawals work, all of a sudden", "that is three separate messages this week about cashing out. three", "a handful of us are talking about taking some off the table", "more than one person has asked me if I am still in. that is new", "two or three withdrawal questions in the thread today and none of them answered", "some of the older members are quietly asking about exiting", "a few of the week-one lot want their money back. read into that what you like", "getting a few messages asking whether I would get out if I could", "noticed a few people asking the same question about withdrawal timing", "a handful of names have gone quiet and then popped up asking about cash-outs")

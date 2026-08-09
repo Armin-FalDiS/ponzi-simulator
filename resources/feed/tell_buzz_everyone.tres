@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 12
+tone = 3
+signal_kind = 1
+band = 2
+author_mask = 31
+min_mood = -0.35
+max_mood = 1.0
+engagement_scale = 3.0
+bodies = PackedStringArray("everyone is talking about this. everyone. my barber brought it up", "the whole group chat is people forwarding it to other group chats", "everyone I know has now asked me about this in the space of two days", "all anyone is talking about is how to get in", "every single person I have spoken to this week has heard of it", "it is everywhere. I cannot open my phone without seeing it", "the entire town knows. that is not an exaggeration", "everybody is asking. I have stopped trying to explain it one at a time", "all my notifications are strangers wanting in", "everyone is sharing it. this is about to get very busy")

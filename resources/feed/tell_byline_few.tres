@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 12
+tone = 4
+signal_kind = 2
+band = 1
+author_mask = 127
+min_mood = -1.0
+max_mood = 1.0
+engagement_scale = 2.8
+bodies = PackedStringArray("a few journalists are asking around now, not just the one", "two reporters have contacted me this week. two", "a handful of press accounts have started following the group", "some people with bylines are asking members for comment", "a few of us have had the same email from the same publication", "more than one journalist is on this now", "getting a few press enquiries and I do not like the questions", "a couple of writers are clearly working on something", "a few reporters in the comments, and they are not being subtle", "some journalists have started talking to each other about it")

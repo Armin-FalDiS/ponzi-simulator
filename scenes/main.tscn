@@ -1,0 +1,248 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/main.gd" id="1_main"]
+[ext_resource type="Script" path="res://scripts/game/game_controller.gd" id="2_controller"]
+[ext_resource type="Resource" path="res://resources/default_scheme.tres" id="3_config"]
+[ext_resource type="Script" path="res://scripts/ui/chart_view.gd" id="4_chart"]
+[ext_resource type="Script" path="res://scripts/ui/feed_view.gd" id="5_feed"]
+[ext_resource type="Script" path="res://scripts/ui/controls_panel.gd" id="6_controls"]
+[ext_resource type="Script" path="res://scripts/ui/calendar_strip.gd" id="7_calendar"]
+[ext_resource type="Script" path="res://scripts/ui/back_office.gd" id="8_books"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_main")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.043137, 0.062745, 0.12549, 1)
+
+[node name="GameController" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("2_controller")
+config = ExtResource("3_config")
+
+[node name="Layout" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 12
+
+[node name="Column" type="VBoxContainer" parent="Layout"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Header" type="HBoxContainer" parent="Layout/Column"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="Layout/Column/Header"]
+layout_mode = 2
+text = "PONZI SIMULATOR"
+theme_type_variation = &"Title"
+
+[node name="Tagline" type="Label" parent="Layout/Column/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+text = "pay the old ones with the new ones — for as long as there are new ones"
+horizontal_alignment = 2
+theme_type_variation = &"Subtitle"
+
+[node name="BooksButton" type="Button" parent="Layout/Column/Header"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+tooltip_text = "The honest books: the gap, solvency, the cohort table, and what
+leaving today is really worth once the laundering cut is paid."
+text = "Back Office   (Tab)"
+
+[node name="StatBar" type="HBoxContainer" parent="Layout/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Body" type="HBoxContainer" parent="Layout/Column"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="LeftColumn" type="VBoxContainer" parent="Layout/Column/Body"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.2
+theme_override_constants/separation = 10
+
+[node name="ChartCard" type="PanelContainer" parent="Layout/Column/Body/LeftColumn"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ChartColumn" type="VBoxContainer" parent="Layout/Column/Body/LeftColumn/ChartCard"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="ChartHeader" type="HBoxContainer" parent="Layout/Column/Body/LeftColumn/ChartCard/ChartColumn"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="ChartTitle" type="Label" parent="Layout/Column/Body/LeftColumn/ChartCard/ChartColumn/ChartHeader"]
+layout_mode = 2
+text = "ASSETS UNDER MANAGEMENT"
+theme_type_variation = &"SectionLabel"
+
+[node name="ChartNote" type="Label" parent="Layout/Column/Body/LeftColumn/ChartCard/ChartColumn/ChartHeader"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+text = "the only chart in the brochure · it has never gone down"
+horizontal_alignment = 2
+theme_type_variation = &"TileNote"
+
+[node name="Chart" type="Control" parent="Layout/Column/Body/LeftColumn/ChartCard/ChartColumn"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("4_chart")
+mode = 1
+
+[node name="CalendarCard" type="PanelContainer" parent="Layout/Column/Body/LeftColumn"]
+layout_mode = 2
+
+[node name="CalendarColumn" type="VBoxContainer" parent="Layout/Column/Body/LeftColumn/CalendarCard"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="CalendarHeader" type="HBoxContainer" parent="Layout/Column/Body/LeftColumn/CalendarCard/CalendarColumn"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="CalendarTitle" type="Label" parent="Layout/Column/Body/LeftColumn/CalendarCard/CalendarColumn/CalendarHeader"]
+layout_mode = 2
+text = "WHAT YOU OWE, AND WHEN"
+theme_type_variation = &"SectionLabel"
+
+[node name="CalendarNote" type="Label" parent="Layout/Column/Body/LeftColumn/CalendarCard/CalendarColumn/CalendarHeader"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+text = "if nobody else ever joins"
+horizontal_alignment = 2
+theme_type_variation = &"TileNote"
+
+[node name="Calendar" type="Control" parent="Layout/Column/Body/LeftColumn/CalendarCard/CalendarColumn"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 96)
+layout_mode = 2
+script = ExtResource("7_calendar")
+
+[node name="RightColumn" type="VBoxContainer" parent="Layout/Column/Body"]
+custom_minimum_size = Vector2(320, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="FeedCard" type="PanelContainer" parent="Layout/Column/Body/RightColumn"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="FeedColumn" type="VBoxContainer" parent="Layout/Column/Body/RightColumn/FeedCard"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="FeedTitle" type="Label" parent="Layout/Column/Body/RightColumn/FeedCard/FeedColumn"]
+layout_mode = 2
+text = "THE FEED"
+theme_type_variation = &"SectionLabel"
+
+[node name="Feed" type="ScrollContainer" parent="Layout/Column/Body/RightColumn/FeedCard/FeedColumn"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+script = ExtResource("5_feed")
+
+[node name="Controls" type="PanelContainer" parent="Layout/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+script = ExtResource("6_controls")
+
+[node name="BackOffice" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("8_books")
+
+[node name="GameOver" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dim" type="ColorRect" parent="GameOver"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.027451, 0.039216, 0.078431, 0.85098)
+
+[node name="Center" type="CenterContainer" parent="GameOver"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Card" type="PanelContainer" parent="GameOver/Center"]
+custom_minimum_size = Vector2(480, 0)
+layout_mode = 2
+
+[node name="CardColumn" type="VBoxContainer" parent="GameOver/Center/Card"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="Verdict" type="Label" parent="GameOver/Center/Card/CardColumn"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "OVER"
+horizontal_alignment = 1
+theme_type_variation = &"Verdict"
+
+[node name="Summary" type="RichTextLabel" parent="GameOver/Center/Card/CardColumn"]
+unique_name_in_owner = true
+layout_mode = 2
+bbcode_enabled = true
+fit_content = true
+
+[node name="Restart" type="Button" parent="GameOver/Center/Card/CardColumn"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Run It Again"
+theme_type_variation = &"Primary"

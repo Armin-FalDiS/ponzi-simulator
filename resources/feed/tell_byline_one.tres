@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 12
+tone = 4
+signal_kind = 2
+band = 0
+author_mask = 127
+min_mood = -1.0
+max_mood = 1.0
+engagement_scale = 1.6
+bodies = PackedStringArray("one journalist has been asking around. probably a slow week for them", "someone with a byline followed me today. that is odd", "a reporter left a comment and then deleted it", "one person claiming to be press asked me how long I have been in", "had one email from a financial publication. I ignored it", "somebody has been asking questions who does not have money in this", "one journalist in the replies. could be nothing", "a writer I have never heard of is asking who actually runs it", "one press enquiry that I know of. these things happen", "someone from a paper asked me for my {weeks} of statements. no")

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PostTemplateSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/post_template_set.gd" id="1_set"]
+
+[resource]
+script = ExtResource("1_set")
+kind = 10
+tone = 1
+author_mask = 14
+min_mood = 0.0
+max_mood = 1.0
+engagement_scale = 2.8
+bodies = PackedStringArray("wired {amount} today. did my own diligence, took a fortnight, came back clean", "in for {amount}. I do not do this often and I do not do it small", "met them at a wedding of all places. sent {amount} on Monday", "moved {amount} out of a managed portfolio that has underperformed for a decade. done deliberating", "{amount}. my family office looked at it, shrugged, and said fine", "a friend of mine put a serious number in last quarter and has had nothing but good news, so: {amount}", "signed for {amount} this morning. the paperwork took nine minutes", "the biggest cheque I have written outside of property. {amount}", "put {amount} in. I will be very visible about how this goes, either way", "{amount} in. I have asked for monthly reporting and been told yes without a pause")
